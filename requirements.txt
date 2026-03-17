@@ -1,0 +1,7 @@
+pandas
+numpy
+scikit-learn
+matplotlib
+seaborn
+
+-e . # This line allows you to install the current directory as a package, if you have a setup.py file.
