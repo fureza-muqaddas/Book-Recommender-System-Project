@@ -6,6 +6,7 @@ seaborn
 pymysql
 mysql-connector-python
 python-dotenv
-
+PyYAML
+streamlit
 
 #-e . # This line allows you to install the current directory as a package, if you have a setup.py file.
