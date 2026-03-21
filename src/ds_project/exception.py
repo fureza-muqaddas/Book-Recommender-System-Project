@@ -16,3 +16,7 @@ class CustomException(Exception):
 
     def __str__(self):
         return self.error_message
+    
+
+def AppException(error_message, error_detail: sys):
+    return CustomException(error_message, error_detail)
