@@ -1,6 +1,5 @@
 import os 
 import sys
-from src.ds_project.exception import CustomException
 from src.ds_project.logger import logging
 import pandas as pd 
 from dotenv import load_dotenv
@@ -24,7 +23,7 @@ def read_sql_data():
         return df
         
     except Exception as e:
-        raise CustomException(e, sys)
+        raise AppException(e, sys) from e
 
 
 
