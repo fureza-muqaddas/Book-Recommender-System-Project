@@ -2,9 +2,181 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Recommender</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #0f172a, #1e293b);
+            color: #e2e8f0;
+            padding: 30px;
+            min-height: 100vh;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 25px;
+            color: #c4b5fd;
+            font-size: 38px;
+        }
+
+        .search-box {
+            width: 100%;
+            max-width: 700px;
+            margin: 0 auto 40px auto;
+            display: flex;
+            gap: 12px;
+        }
+
+        .search-box input {
+            flex: 1;
+            padding: 14px 16px;
+            border: none;
+            outline: none;
+            border-radius: 12px;
+            font-size: 16px;
+            background-color: #1e293b;
+            color: #f8fafc;
+            border: 1px solid #334155;
+        }
+
+        .search-box input::placeholder {
+            color: #94a3b8;
+        }
+
+        .search-box button {
+            padding: 14px 22px;
+            border: none;
+            border-radius: 12px;
+            background: linear-gradient(135deg, #818cf8, #a78bfa);
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+            transition: 0.3s ease;
+        }
+
+        .search-box button:hover {
+            transform: translateY(-2px);
+            opacity: 0.95;
+        }
+
+        .section-title {
+            margin: 35px 0 20px;
+            font-size: 24px;
+            color: #c4b5fd;
+        }
+
+        .book-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 22px;
+        }
+
+        .book-card {
+            background: rgba(30, 41, 59, 0.9);
+            border: 1px solid rgba(148, 163, 184, 0.15);
+            border-radius: 18px;
+            padding: 15px;
+            text-align: center;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+            backdrop-filter: blur(8px);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .book-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 25px rgba(0, 0, 0, 0.35);
+        }
+
+        .book-card img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 12px;
+            margin-bottom: 12px;
+        }
+
+        .book-title {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 8px;
+            color: #f8fafc;
+            line-height: 1.4;
+        }
+
+        .book-author,
+        .book-votes,
+        .book-rating {
+            font-size: 14px;
+            margin-bottom: 6px;
+            color: #cbd5e1;
+        }
+
+        .not-found {
+            text-align: center;
+            color: #fda4af;
+            margin-top: 20px;
+            font-size: 18px;
+        }
+
+        .searched-text {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #cbd5e1;
+            font-size: 16px;
+        }
+    </style>
 </head>
 <body>
+
+    <h1>Book Recommender System</h1>
+
+    <form class="search-box" action="/recommend" method="post">
+        <input type="text" name="user_book" placeholder="Enter exact book title" required>
+        <button type="submit">Search</button>
+    </form>
+
+    {% if data is not none %}
+        <div class="section-title">Recommended Books</div>
+
+        {% if searched_book %}
+            <div class="searched-text">Search result for: <strong>{{ searched_book }}</strong></div>
+        {% endif %}
+
+        {% if data|length == 0 %}
+            <div class="not-found">Book not found in dataset.</div>
+        {% else %}
+            <div class="book-container">
+                {% for book in data %}
+                <div class="book-card">
+                    <img src="{{ book.image }}" alt="Book Image">
+                    <div class="book-title">{{ book.title }}</div>
+                    <div class="book-author">Author: {{ book.author }}</div>
+                </div>
+                {% endfor %}
+            </div>
+        {% endif %}
+    {% endif %}
+
+    <div class="section-title">Top 50 Books</div>
+
+    <div class="book-container">
+        {% for i in range(book_name|length) %}
+        <div class="book-card">
+            <img src="{{ image[i] }}" alt="Book Image">
+            <div class="book-title">{{ book_name[i] }}</div>
+            <div class="book-author">Author: {{ author[i] }}</div>
+            <div class="book-votes">Votes: {{ votes[i] }}</div>
+            <div class="book-rating">Rating: {{ ratings[i] }}</div>
+        </div>
+        {% endfor %}
+    </div>
 
 </body>
 </html>
