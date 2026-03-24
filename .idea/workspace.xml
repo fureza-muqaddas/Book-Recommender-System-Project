@@ -5,10 +5,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b7e46e23-0854-4424-803d-72f2906c2767" name="Changes" comment="app structure">
-      <change afterPath="$PROJECT_DIR$/Procfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Requirements.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.dvc/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.dvc/config" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.dvcignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Book.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/notebook/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/notebook/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/notebook/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/notebook/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/notebook/.idea/notebook.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/notebook/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/notebook/Books.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/notebook/EDA &amp; Feature Engineering.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/notebook/Ratings.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/notebook/Users.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/notebook/anaconda_projects/db/project_filebrowser.db" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/notebook/xyz.ipynb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,7 +73,7 @@
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
     "RunOnceActivity.git.unshallow": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "master",
+    "git-widget-placeholder": "Merging main",
     "last_opened_file_path": "C:/Users/furez/PycharmProjects/book-recommender-system"
   }
 }]]></component>

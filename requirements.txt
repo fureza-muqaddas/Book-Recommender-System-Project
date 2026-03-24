@@ -1,5 +1,20 @@
+<<<<<<< HEAD
 flask
 numpy
 pandas
 gunicorn
 scikit-learn
+=======
+pandas
+numpy
+scikit-learn
+matplotlib
+seaborn
+pymysql
+mysql-connector-python
+python-dotenv
+PyYAML
+streamlit
+
+#-e . # This line allows you to install the current directory as a package, if you have a setup.py file.
+>>>>>>> 2ea03b18c86aef13097dc75aefecdbb435b23bea
