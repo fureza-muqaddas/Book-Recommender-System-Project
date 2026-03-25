@@ -230,6 +230,7 @@ To deploy your own:
 ### Recommendation Results
 
 ![Recommendation Results](images/recommendation.png)
+![Recommendation Example](images/recommendation_example.png)
 
 ---
 
