@@ -2,7 +2,7 @@
 
 A machine learning-powered book recommendation engine built with Python and scikit-learn, using **K-Nearest Neighbors with cosine similarity** to suggest books based on real user rating patterns.
 
-🚀 **Live Demo:** [book-recommender-system-project.onrender.com](https://book-recommender-system-project-oo5p.onrender.com)
+🚀 **Live Demo:** (https://book-recommender-system-project-oo5p.onrender.com)
 
 ---
 
@@ -31,7 +31,6 @@ A machine learning-powered book recommendation engine built with Python and scik
 | Visualization | matplotlib, seaborn |
 | Web Framework | Flask |
 | WSGI Server | Gunicorn |
-| Containerization | Docker |
 | Deployment | Render |
 | Data Versioning | DVC |
 
@@ -53,7 +52,6 @@ book-recommender-system/
 ├── final_df.pkl            # Processed final ratings dataframe
 ├── pt.pkl                  # Pivot table (book-user matrix)
 │
-├── Dockerfile
 ├── Procfile
 ├── requirements.txt
 ├── .dvcignore
@@ -67,7 +65,7 @@ book-recommender-system/
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/fureza-muqaddas/Book-Recommender-System-Project.git
+   git clone (https://github.com/fureza-muqaddas/Book-Recommender-System-Project.git)
    cd book-recommender-system-project
    ```
 
@@ -88,15 +86,6 @@ book-recommender-system/
    python app.py
    ```
    Visit `http://localhost:5000`
-
----
-
-## 🐳 Run with Docker
-
-```bash
-docker build -t book-recommender .
-docker run -p 5000:5000 book-recommender
-```
 
 ---
 
@@ -201,7 +190,7 @@ recommend_books("The Secret Garden")
 
 ## 📊 Dataset
 
-[Book-Crossing Dataset](http://www2.informatik.uni-freiburg.de/~cziegler/BX/) — real-world book ratings collected from the Book-Crossing community.
+(https://www.kaggle.com/datasets/arashnic/book-recommendation-dataset/data?select=Books.csv) — real-world book ratings collected from the Book-Crossing community.
 
 | File | Description |
 |------|-------------|
@@ -222,7 +211,7 @@ recommend_books("The Secret Garden")
 
 ## 🌐 Deployment on Render
 
-Deployed as a Docker-based web service on [Render](https://render.com), served with **Gunicorn** as the production WSGI server.
+Deployed as a web service on [Render](https://render.com), served with **Gunicorn** as the production WSGI server.
 
 **Procfile:**
 ```
@@ -232,7 +221,7 @@ web: gunicorn app:app
 To deploy your own:
 1. Fork this repo
 2. Create a new **Web Service** on Render
-3. Connect your GitHub repo — Render auto-detects the `Dockerfile`
+3. Connect your GitHub repo and set the start command to `gunicorn app:app`
 
 ---
 
@@ -244,9 +233,9 @@ This project is licensed under the [MIT License](LICENSE).
 
 ## 👤 Author
 
-**Fureza Muqaddas**  
+**Your Name**  
 GitHub: [@fureza-muqaddas](https://github.com/fureza-muqaddas)  
-LinkedIn: [fureza-muqaddas](www.linkedin.com/in/fureza-muqaddas)
+LinkedIn: [fureza-muqaddas](https://www.linkedin.com/in/fureza-muqaddas/)
 
 ---
 
