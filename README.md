@@ -229,7 +229,7 @@ To deploy your own:
 
 ### Recommendation Results
 
-![Recommendation Results](images_recommendation.png)
+![Recommendation Results](<img src="images_recommendation.png" alt="Recommendation Results" width="800">)
 
 ---
 
