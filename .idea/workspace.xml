@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b7e46e23-0854-4424-803d-72f2906c2767" name="Changes" comment="app structure" />
+    <list default="true" id="b7e46e23-0854-4424-803d-72f2906c2767" name="Changes" comment="app structure">
+      <change afterPath="$PROJECT_DIR$/images/recommendation.png" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
