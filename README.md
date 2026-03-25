@@ -225,6 +225,14 @@ To deploy your own:
 
 ---
 
+## Screenshots
+
+### Recommendation Results
+
+![Recommendation Results](images_recommendation.png)
+
+---
+
 ## 📄 License
 
 This project is licensed under the [MIT License](LICENSE).
