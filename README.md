@@ -242,10 +242,10 @@ This project is licensed under the [MIT License](LICENSE).
 
 ## 👤 Author
 
-**Your Name**  
+**Fureza Muqaddas**  
 GitHub: [@fureza-muqaddas](https://github.com/fureza-muqaddas)  
 LinkedIn: [fureza-muqaddas](https://www.linkedin.com/in/fureza-muqaddas/)
 
 ---
 
-> ⭐ If you found this useful, give it a star — it helps others discover the project!
+> ⭐ If you found this useful, give it a star; it helps others discover the project!
